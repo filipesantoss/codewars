@@ -1,0 +1,13 @@
+ntellij IDE
+.idea/
+*.iml
+out/
+
+# MacOS
+**/.DS_Store
+**/._*
+
+# Windows
+**/Desktop.ini
+**/Thumbs.db
+**/*.lnk
