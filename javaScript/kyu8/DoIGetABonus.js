@@ -15,5 +15,5 @@ console.log(bonusTime(1, true));
 
 function bonusTime(salary, bonus) {
 
-  return "£" + (bonus ? salary * 10 : salary);
+  return '£' + (bonus ? salary * 10 : salary);
 }

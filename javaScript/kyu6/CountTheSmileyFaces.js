@@ -20,7 +20,7 @@ console.log(countSmileys([':D',':~)',';~D',':)']));
 function countSmileys(arr) {
 
   var smileyCount = 0;
-  var regex = new RegExp("[:;][~-]?[)D]");
+  var regex = new RegExp('[:;][~-]?[)D]');
 
   for (var i = 0; i < arr.length; i++) {
     if (regex.test(arr[i])) {

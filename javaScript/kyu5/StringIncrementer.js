@@ -12,11 +12,11 @@ foo099 -> foo100
 Attention: If the number has leading zeros the amount of digits should be considered.
 */
 
-console.log(incrementString("foo00"));
+console.log(incrementString('foo00'));
 
 function incrementString (strng) {
 
-  var regex = new RegExp("[0-9]+");
+  var regex = new RegExp('[0-9]+');
 
   if(!regex.test(strng)) {
     return strng + 1;
@@ -32,9 +32,9 @@ function incrementString (strng) {
 
 function pad(number, length) {
   var difference = length - number.toString().length;
-  number = "" + number;
+  number = '' + number;
     for (var i = 0; i < difference; i++) {
-      number = "0" + number;
+      number = '0' + number;
     }
   return number;
 }

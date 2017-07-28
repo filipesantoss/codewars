@@ -16,12 +16,12 @@ console.log(anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada']));
 function anagrams(word, words) {
 
   //Sort character in string.
-  word = word.split("").sort().join("");
+  word = word.split('').sort().join('');
   var matches = [];
 
   for (var i = 0; i < words.length; i++) {
     //Sort and compare.
-    if (words[i].split("").sort().join("") == word) {
+    if (words[i].split('').sort().join('') == word) {
       matches.push(words[i]);
     }
   }

@@ -8,8 +8,6 @@ uniqueInOrder('ABBCcAD')         == ['A', 'B', 'C', 'c', 'A', 'D']
 uniqueInOrder([1,2,2,3,3])       == [1,2,3]
 */
 
-console.log(uniqueInOrder("AAAABBBCCDAABBB"));
-
 function uniqueInOrder(iterable) {
 
   var inOrder = [];

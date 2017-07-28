@@ -16,37 +16,51 @@ sum_pairs([10, 5, 2, 3, 7, 5],         10)
 == [3, 7]
 */
 
-console.log(sumOfPairs([4,-2,3,3,4], 8));
+console.log(sumOfPairs([4, -2, 3, 3, 4], 8));
 
 //TODO code is timing out - need to have better performance.
 
 function sumOfPairs(array, result) {
 
-  var pairs = [];
 
-  var i;
+
+  //TRY SOMETHING LIKE A REDUCE FUNCTION
+
+ // var pairs = [];
+  var result = {
+    firstIndex: 0,
+    lastIndex: array.length - 1,
+    range: array.length
+  };
+
+
+  //var i;
   //Search for elements that sum to the wanted result
-  for (i = 0; i < array.length; i++) {
+  for (var i = 0; i < array.length; i++) {
     for (var j = i + 1; j < array.length; j++) {
-      if (array[i] + array[j] == result) {
-        pairs.push([i, j]);
+      if (array[i] + array[j] == result && j - i < result.range) {
+        //  pairs.push([i, j]);
+        result.firstIndex = array[i];
+        result.lastIndex = array[j];
+        result.range = j - i;
+        break;
       }
     }
   }
 
-  if (pairs.length === 0) {
-    return undefined;
+  if (result.range === undefined) {
+    return result.range;
   }
 
   //Define first pair as the earliest pair
-  var min = [array[pairs[0][0]], array[pairs[0][1]]];
+  //var min = [array[pairs[0][0]], array[pairs[0][1]]];
 
   //Look for possible earlier pair
-  for (i = 1; i < pairs.length; i++) {
-    if (pairs[i][1] - pairs[i][0] < min[1]) {
-      min = [array[pairs[i][0]], array[pairs[i][1]]];
-    }
-  }
+  //for (i = 1; i < pairs.length; i++) {
+  //  if (pairs[i][1] - pairs[i][0] < min[1]) {
+  //    min = [array[pairs[i][0]], array[pairs[i][1]]];
+  //  }
+ // }
 
-  return min;
+  return [result.firstIndex, result.lastIndex];
 }

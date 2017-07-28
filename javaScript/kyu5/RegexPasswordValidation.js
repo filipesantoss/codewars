@@ -22,10 +22,7 @@ function validate(password) {
     //has digit - [0-9]
     //has lowercase - [a-z]
     //is at leat 6 chars - {6,}
-    console.log('upper', /(?=.*[A-Z])/g.test(password));
-    console.log('digit', /(?=.*[0-9])/g.test(password));
-    console.log('lower', /(?=.*[a-z])/g.test(password));
-
+    
     regex = /^(?=.*[A-Z])(?=.*[0-9])(?=.*[a-z]).{6,}$/g;
     return regex.test(password);
 }
