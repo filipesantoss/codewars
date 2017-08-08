@@ -1,7 +1,10 @@
-ntellij IDE
+Intellij IDE
 .idea/
 *.iml
 out/
+
+VSCode
+.vscode/
 
 # MacOS
 **/.DS_Store
