@@ -1,10 +1,4 @@
-package codewars.katas.kyu7;
-
-/**
- * Developed @ <Academia de Código_>
- * Created by
- * <Code Cadet> Filipe Santos Sá
- */
+package codewars.kata.kyu7;
 
 public class JadenCase {
 

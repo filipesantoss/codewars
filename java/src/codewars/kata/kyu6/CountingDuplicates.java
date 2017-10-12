@@ -1,12 +1,6 @@
-package codewars.katas.kyu6;
+package codewars.kata.kyu6;
 
 import java.util.*;
-
-/**
- * Developed @ <Academia de Código_>
- * Created by
- * <Code Cadet> Filipe Santos Sá
- */
 
 public class CountingDuplicates {
     /**

@@ -1,4 +1,4 @@
-package codewars.katas.kyu6;
+package codewars.kata.kyu6;
 
 public class SequencesAndSeries {
 

@@ -1,13 +1,7 @@
-package codewars.katas.kyu7;
+package codewars.kata.kyu7;
 
 import java.util.ArrayList;
 import java.util.List;
-
-/**
- * Developed @ <Academia de Código_>
- * Created by
- * <Code Cadet> Filipe Santos Sá
- */
 
 public class HighestAndLowest {
 
