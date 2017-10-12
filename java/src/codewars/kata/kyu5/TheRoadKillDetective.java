@@ -142,8 +142,8 @@ public class TheRoadKillDetective {
                 "jackal", "jaguar", "jellyfish", "kangaroo", "kiwi", "koala", "killerwhale", "lemur",
                 "leopard", "llama", "lion", "monkey", "mouse", "moose", "meercat", "numbat", "newt",
                 "ostrich", "otter", "octopus", "orangutan", "penguin", "panther", "parrot", "pig", "quail",
-                "quokka", "quoll", "rat", "rhinoceros", "racoon", "reindeer", "rabbit", "snake", "squirrel", "sheep",
-                "seal", "turtle", "tiger", "turkey", "tapir", "unicorn", "vampirebat", "vulture", "wombat", "walrus",
-                "wildebeast", "wallaby", "yak", "zebra" };
+                "quokka", "quoll", "rat", "rhinoceros", "racoon", "reindeer", "rabbit", "snake", "squirrel",
+                "sheep", "seal", "turtle", "tiger", "turkey", "tapir", "unicorn", "vampirebat", "vulture",
+                "wombat", "walrus", "wildebeast", "wallaby", "yak", "zebra" };
     }
 }
