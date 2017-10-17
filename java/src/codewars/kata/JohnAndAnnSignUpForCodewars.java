@@ -5,30 +5,7 @@ import java.util.List;
 
 public class JohnAndAnnSignUpForCodewars {
 
-    /**
-     * John and his wife Ann have decided to go to Codewars.
-     * <p>
-     * On day 0 Ann will do one kata and John - he wants to know how it is working - 0.
-     * <p>
-     * Let us call a(n) the number of katas done by Ann at day n we have a(0) = 1 and in the same manner j(0) = 0.
-     * <p>
-     * They have chosen the following rules:
-     * <p>
-     * On day n the number of katas done by Ann should be n minus the number of katas done by John at day t,
-     * t being equal to the number of katas done by Ann herself at day n - 1.
-     * <p>
-     * On day n the number of katas done by John should be n minus the number of katas done by Ann at day t,
-     * t being equal to the number of katas done by John himself at day n - 1.
-     * <p>
-     * Whoops! I think they need to lay out a little clearer exactly what there're getting themselves into!
-     * <p>
-     * Could you write:
-     * <p>
-     * 1) two functions ann and john (parameter n) giving the list of the numbers of katas Ann and John should take on each day from day 0 to day n - 1
-     * 2) The total number of katas taken by ann (function sum_ann(n)) and john (function sum_john(n)) from day 0 (inclusive) to day n (exclusive)?
-     */
-
-    //TODO needs to be more efficient
+    //TODO not very performative
 
     public static void main(String[] args) {
 

@@ -4,23 +4,7 @@ import java.util.Arrays;
 
 public class SrotTheInnerCtonnet {
 
-    /**
-     * You have to sort the inner content of every word of a string in descending order.
-     * The inner content is the content of a word without first and the last char.
-     * <p>
-     * Some examples:
-     * <p>
-     * "sort the inner content in descending order" -> "srot the inner ctonnet in dsnnieedcg oredr"
-     * "wait for me" -> "wiat for me"
-     * "this kata is easy" -> "tihs ktaa is esay"
-     * The string will never be null and will never be empty.
-     * It will contain only lowercase-letters and whitespaces.
-     */
-
-    public static void main(String[] args) {
-
-        System.out.println(SrotTheInnerCtonnet.sortTheInnerContent("wait for me"));
-    }
+    // https://www.codewars.com/kata/5898b4b71d298e51b600014b
 
     private static String sortTheInnerContent(String s) {
 
@@ -29,27 +13,27 @@ public class SrotTheInnerCtonnet {
         }
 
         String[] wordsInArgument = s.split(" ");
-        String result = "";
+        StringBuilder result = new StringBuilder();
 
         for (String string : wordsInArgument) {
 
             if (string.length() <= 3) {
-                result += string + " ";
+                result.append(string).append(" ");
                 continue;
             }
 
             char[] word = string.substring(1, string.length() - 1).toCharArray();
             Arrays.sort(word);
 
-            String sort = "";
+            StringBuilder sort = new StringBuilder();
             for (int i = word.length - 1; i >= 0; i--) {
-                sort += word[i];
+                sort.append(word[i]);
             }
 
-            sort = string.charAt(0) + sort + string.charAt(string.length() - 1);
-            result += sort + " ";
+            sort = new StringBuilder(string.charAt(0) + sort.toString() + string.charAt(string.length() - 1));
+            result.append(sort).append(" ");
         }
 
-        return result.substring(0, result.length() - 1);
+        return result.toString().substring(0, result.length() - 1);
     }
 }

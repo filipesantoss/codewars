@@ -2,26 +2,7 @@ package codewars.kata.kyu6;
 
 public class SequencesAndSeries {
 
-    /**
-     * Have a look at the following numbers.
-
-     n | score
-     ---+-------
-     1 |  50
-     2 |  150
-     3 |  300
-     4 |  500
-     5 |  750
-
-     Can you find a pattern in it?
-     If so, then write a function getScore(n) which returns the score for any positive number n:
-     */
-
-    public static void main(String[] args) {
-
-        System.out.println(SequencesAndSeries.getScore(13124));
-
-    }
+    // https://www.codewars.com/kata/5254bd1357d59fbbe90001ec
 
     public static long getScore(long n) {
 
