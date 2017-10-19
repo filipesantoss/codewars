@@ -1,5 +1,7 @@
 package codewars.kata.kyu5;
 
+import codewars.kata.utils.Binary;
+
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Stack;
@@ -31,23 +33,6 @@ public class DeltaBits {
     }
 
     private static int[] getBits(int number, int bitCount) {
-        Stack<Integer> bits = new Stack<>();
-
-        while (number != 0 || bits.size() < bitCount) {
-            if (number != 0) {
-                bits.push(number % 2);
-                number /= 2;
-                continue;
-            }
-            bits.push(0);
-        }
-
-        Collections.reverse(bits);
-
-        //stream() - stream over the elements in collection
-        //mapToInt(function) - int stream, applies function to every value
-        //value -> value - function to be applied
-        //toArray() - array containing elements in the stream
-        return bits.stream().mapToInt(value -> value).toArray();
+       return Binary.getBits(number, bitCount);
     }
 }

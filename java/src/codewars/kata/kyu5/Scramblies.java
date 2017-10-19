@@ -9,10 +9,6 @@ public class Scramblies {
 
     // https://www.codewars.com/kata/55c04b4cc56a697bb0000048
 
-    public static void main(String[] args) {
-        System.out.println(scramble("rkqodlw", "world"));
-    }
-
     public static boolean scramble(String str1, String str2) {
 
         Map<String, Integer> map1 = histogram(str1);
